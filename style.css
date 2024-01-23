@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --pinkShade: #df425c;
+    --blueShade: #110340;
+
+}
+
+/*
+=======================
+? Loader 
+=======================
+*/
+
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: #e5eff1 url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnEyczU0aHY5dzFqY2p3dWhwOGZ6Z3N1MXdkcjB5dWp0OTNxYXVlYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTk9ZvMnbIiIew7IpW/giphy.gif') no-repeat center;
+    background-size: 7rem;
+    position: fixed;
+    z-index: 10;
+}
+
+/*
+=======================
+? Navbar 
+=======================
+*/
+
+.NavbarContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3.75rem;
+    background: black;
+    padding: 0 2rem;
+}
+
+.Navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .logo i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.Navbar .logo span {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.SearchBar {
+    display: flex;
+    position: relative;
+}
+
+.SearchBar input {
+    width: 25rem;
+    height: 2.6rem;
+    border-radius: 5.5px;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    background: black;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    ;
+
+}
+
+.SearchBar .searchIcon {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+
+#searchBtn:hover {
+    color: rgb(188, 188, 188);
+    scale: 1.09;
+    transition: .2s;
+}
+
+
+/*
+=======================
+? Main Section 
+=======================
+*/
+
+.Main_Section {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 0 3rem;
+    padding-top: 3rem;
+}
+
+.MainCont {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+=======================
+* User Info 
+=======================
+*/
+
+.UserInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Image {
+    display: flex;
+}
+
+.UserInfo .Image img {
+    mix-blend-mode: multiply;
+    height: 250px;
+    box-shadow: 0px 0px 10px 0px #ababab;
+    border-radius: 50%;
+}
+
+
+/** User Data  */
+
+.UserData {
+    display: flex;
+    margin: 0 2rem;
+    flex-direction: column;
+}
+
+.UserData #Name {
+    font-size: 2.5rem;
+}
+
+.User {
+    display: flex;
+    align-items: center;
+}
+
+.UserData p {
+    width: 30rem;
+    margin: 5px 0;
+    color: #838383;
+    font-size: 0.9rem;
+}
+
+.UserData #Location {
+    display: flex;
+    margin-bottom: 0.2rem;
+    margin-left: 0.8rem;
+    color: var(--blueShade);
+}
+
+#Location:hover {
+    cursor: pointer;
+    color: var(--pinkShade);
+    transition: 0.2s;
+}
+
+.UserData #Link {
+    display: flex;
+    margin-left: 0.37rem;
+    color: var(--blueShade);
+    font-weight: 500;
+    font-size: 0.9rem;
+
+}
+
+#Link:hover {
+    color: var(--pinkShade);
+    transition: 0.2s;
+}
+
+
+/*
+=======================
+* Divider 
+=======================
+*/
+
+.Divider {
+    margin: 3rem 0;
+}
+
+.Divider .DividerName {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.DividerName::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: rgb(6, 1, 27);
+    left: 3px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+
+.DividerName::before {
+    position: absolute;
+    content: '';
+    width: 180px;
+    height: 5px;
+    background: linear-gradient(to right, var(--blueShade), var(--pinkShade));
+    left: 5px;
+    bottom: -7px;
+    border-radius: 20px;
+}
+
+
+
+/*
+=======================
+? Repositories
+=======================
+*/
+
+
+.RepoCont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
+    /* grid-column-gap: 4rem; */
+}
+
+.Repo {
+    box-shadow: 0px 0px 10px 0px #b4b4b4;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Repo:hover {
+    cursor: pointer;
+    outline: 3px solid var(--pinkShade);
+    transition: 0.15s ease-in-out;
+}
+
+.Repo h1 a {
+    text-decoration: none;
+    color: rgb(2, 2, 54);
+}
+
+.Repo h1 a:hover {
+    text-decoration: underline;
+}
+
+.Repo .RepoDiscription {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    color: #4e4e4e;
+}
+
+.Repo .RepoLanguage {
+    border: none;
+    background: var(--blueShade);
+    border-radius: 7px;
+    color: var(--pinkShade);
+    font-size: 1.2rem;
+    width: fit-content;
+    padding: 3px 9px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*
+=======================
+? Footer
+=======================
+*/
+
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: var(--blueShade);
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+}
+
+
+button {
+
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0.2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(225, 63, 117);
+    color: white;
+}
+
+.active {
+    background-color: rgb(225, 63, 117);
+    color: white;
+}
+
+
+
+
+/*
+=======================
+? Responsive Code
+=======================
+*/
+
+@media (max-width:850px) {
+
+    .UserInfo {
+        flex-direction: column;
+    }
+
+    .UserData {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .RepoCont {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media (max-width:672px) {
+
+    .SearchBar input {
+        width: 15rem;
+        font-size: 1.1rem;
+    }
+
+    .NavbarContainer {
+        padding: 0 1rem;
+    }
+}
+
+
+@media (max-width:500px) {
+
+    .SearchBar input {
+        width: 12rem;
+        font-size: 0.9rem;
+        padding-right: 2.5rem;
+    }
+
+    .UserInfo .Image img {
+        height: 200px;
+    }
+
+    .UserData p {
+        width: 20rem;
+        font-size: 0.7rem;
+    }
+
+    .Divider .DividerName {
+        font-size: 1.5rem;
+    }
+
+    .UserData #Name {
+        font-size: 1.8rem;
+    }
+
+    .Navbar .logo i {
+        font-size: 1.7rem;
+        padding: 0 5px;
+    }
+
+    .Navbar .logo span {
+        font-size: 1rem;
+    }
+
+    .SearchBar .searchIcon {
+        padding: 0 0.9rem;
+        font-size: 1rem;
+    }
+    .Main_Section {
+        padding: 0 2rem;
+        padding-top: 3rem;
+    }
+
+    .Repo h1 a {
+        font-size: 1.4rem;
+    }
+
+    .Repo .RepoDiscription {
+        font-size: 0.75rem;
+    }
+    .Repo .RepoLanguage {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width:345px) {
+
+
+    .UserData p {
+        width: 17rem;
+        font-size: 0.6rem;
+    }
+
+    .UserData #Name {
+        font-size: 1.5rem;
+    }
+
+    .Navbar .logo i {
+        font-size: 1.5rem;
+        padding: 0 5px;
+    }
+
+    .Navbar .logo span {
+        font-size: 0.85rem;
+    }
+
+    .SearchBar input {
+        width: 10rem;
+        font-size: 0.75rem;
+        padding-right: 2.2rem;
+    }
+    .Divider .DividerName {
+        font-size: 1.2rem;
+    }
+
+    .DividerName::before {
+        width: 140px;
+    }
+
+    .Main_Section {
+        padding: 0 1rem;
+        padding-top: 3rem;
+    }
+        
+}

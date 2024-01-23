@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body onload="showLoader()">
+
+
+    <!--
+================== 
+? Loader
+================= 
+-->
+
+    <div class="loading"></div>
+
+
+    <!--
+================== 
+? Navbar
+================= 
+-->
+
+
+    <div class="NavbarContainer">
+
+        <div class="Navbar">
+            <div class="logo">
+                <i class="fa-brands fa-github-alt"></i>
+                <span>GitRepo</span>
+            </div>
+
+            <div class="SearchBar">
+                <div class="searchContainer">
+                    <label for="search"></label>
+                    <input type="text" name="searchUserName" id="search" placeholder="Enter Username">
+                </div>
+
+                <div class="searchIcon">
+                    <i id="searchBtn" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--
+================== 
+? Main Section
+================= 
+-->
+
+    <section class="Main_Section">
+
+        <div class="MainCont">
+            <div class="UserInfo">
+
+                <div class="Image">
+                    <img id="UserImage" src="./GitHub.png" alt="">
+                </div>
+
+                <div class="UserData">
+                    <h1 id="Name">User FullName</h1>
+                    <p id="Bio">User Bio</p>
+                    <div class="User">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3 id="Location">Location</h3>
+                    </div>
+                    <div class="User">
+                        <i class="fa-solid fa-link"></i>
+                        <a id="Link" href="">Website</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--
+================== 
+? Divider 
+================= 
+-->
+
+            <div class="Divider">
+                <div class="DividerName">User Repositories</div>
+            </div>
+
+
+            <!--
+================== 
+? Repo Container 
+================= 
+
+-->
+
+            <div class="UserRepo">
+                <div class="RepoCont">
+                </div>
+            </div>
+
+    </section>
+
+    <!--
+================== 
+? Pagination Footer 
+================= 
+-->
+
+
+    <footer class="footer" onmouseenter="getPage()"></footer>
+
+
+    <script src="./script.js"></script>
+    <!-- <script src="./3.js"></script> -->
+    <script src="./Pagination.js"></script>
+
+</body>
+
+</html>
