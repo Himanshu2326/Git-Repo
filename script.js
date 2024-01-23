@@ -90,7 +90,7 @@ const FetchRepo = async () => {
         footerDiv.innerHTML += `<button class="Prebtn" onclick = "pre()" >Pre</button>`;
 
         for (let i = 1; i <= btnCount; i++) {
-            footerDiv.innerHTML += `<button class="btn button active"  >${i}</button>`;
+            footerDiv.innerHTML += `<button class="btn button active" onclick = "getPage()"  >${i}</button>`;
         }
         //* ===> NEXT BUTTON 
         footerDiv.innerHTML += `<button class="Nextbtn" onclick = "next()" >Next</button>`;
