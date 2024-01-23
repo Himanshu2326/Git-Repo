@@ -339,6 +339,7 @@ button {
     margin: 0 0.2rem;
     padding: 5px 10px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
@@ -407,10 +408,6 @@ button:hover {
         padding-right: 2.5rem;
     }
 
-    .UserInfo .Image img {
-        height: 200px;
-    }
-
     .UserData p {
         width: 20rem;
         font-size: 0.7rem;
@@ -437,6 +434,7 @@ button:hover {
         padding: 0 0.9rem;
         font-size: 1rem;
     }
+
     .Main_Section {
         padding: 0 2rem;
         padding-top: 3rem;
@@ -449,8 +447,34 @@ button:hover {
     .Repo .RepoDiscription {
         font-size: 0.75rem;
     }
+
     .Repo .RepoLanguage {
         font-size: 0.9rem;
+    }
+
+    .UserData #Link {
+        font-size: 0.65rem;
+    }
+
+    .Repo {
+        margin: 0.8rem;
+        padding: 1rem 0.9rem;
+    }
+
+    .UserInfo .Image img {
+        height: 165px;
+    }
+    
+    
+}
+
+@media (max-width:440px) {
+    .Repo h1 a {
+        font-size: 1.1rem;
+    }
+
+    .Repo .RepoDiscription {
+        font-size: 0.67rem;
     }
 }
 
@@ -481,6 +505,7 @@ button:hover {
         font-size: 0.75rem;
         padding-right: 2.2rem;
     }
+
     .Divider .DividerName {
         font-size: 1.2rem;
     }
@@ -493,5 +518,24 @@ button:hover {
         padding: 0 1rem;
         padding-top: 3rem;
     }
-        
+
+    .Repo .RepoLanguage {
+        font-size: 1.1rem;  
+        padding: 2px 6px;
+    }
+
+    .Repo {
+        margin: 0.7rem 0.2rem;
+        padding: 0.8rem 0.8rem;
+    }
+    
+    .Repo h1 a {
+        font-size: 0.9rem;
+    }
+
+    .Repo .RepoLanguage {
+        font-size: 0.9rem;
+        padding: 1.5px 5px;
+    }
+    
 }
