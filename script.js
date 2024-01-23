@@ -176,7 +176,8 @@ const FetchRepo = async () => {
         loader.style.display = 'none';
         InputValue.value = ""
         InputValue.placeholder = "Invalid Username";
-          
+
+        UserImage.src = './GitHub.png'; 
         Location.innerHTML = 'Location'    
         Name.innerHTML = 'Invalid Username'                          
         Bio.innerHTML = 'Bio'          
