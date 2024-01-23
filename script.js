@@ -182,7 +182,7 @@ const FetchRepo = async () => {
         Name.innerHTML = 'Invalid Username'                          
         Bio.innerHTML = 'Bio'          
         Link.innerHTML = 'Link';       
-
+       DividerName.innerHTML = 'Repositories';
     }
 
 
