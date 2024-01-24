@@ -191,7 +191,7 @@ const FetchRepo = async () => {
     searchBtn.addEventListener('click', FetchRepo)
 
     InputValue.addEventListener('keydown', (e) => {
-        if (e.code == "Enter") {
+        if (e.keyCode===13) {
             FetchRepo();
         }
     })
